@@ -14,6 +14,8 @@
 		BB08F5C31F8697BD00584111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB08F5C21F8697BD00584111 /* Assets.xcassets */; };
 		BB08F5C61F8697BD00584111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB08F5C41F8697BD00584111 /* LaunchScreen.storyboard */; };
 		BB08F5D11F8697BD00584111 /* CameraDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB08F5D01F8697BD00584111 /* CameraDemoTests.m */; };
+		BB08F5DD1F86B51100584111 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB08F5DC1F86B51100584111 /* AVFoundation.framework */; };
+		BB08F5DF1F86B5A600584111 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB08F5DE1F86B5A600584111 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		BB08F5CC1F8697BD00584111 /* CameraDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB08F5D01F8697BD00584111 /* CameraDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraDemoTests.m; sourceTree = "<group>"; };
 		BB08F5D21F8697BD00584111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB08F5DC1F86B51100584111 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BB08F5DE1F86B5A600584111 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB08F5DF1F86B5A600584111 /* UIKit.framework in Frameworks */,
+				BB08F5DD1F86B51100584111 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				BB08F5B51F8697BC00584111 /* CameraDemo */,
 				BB08F5CF1F8697BD00584111 /* CameraDemoTests */,
 				BB08F5B41F8697BC00584111 /* Products */,
+				BB08F5DB1F86B51100584111 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +116,15 @@
 				BB08F5D21F8697BD00584111 /* Info.plist */,
 			);
 			path = CameraDemoTests;
+			sourceTree = "<group>";
+		};
+		BB08F5DB1F86B51100584111 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB08F5DE1F86B5A600584111 /* UIKit.framework */,
+				BB08F5DC1F86B51100584111 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +176,7 @@
 				TargetAttributes = {
 					BB08F5B21F8697BC00584111 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 387F92TFMT;
 						ProvisioningStyle = Automatic;
 					};
 					BB08F5CB1F8697BD00584111 = {
@@ -351,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 387F92TFMT;
 				INFOPLIST_FILE = CameraDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comt.example.CameraDemo;
@@ -362,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 387F92TFMT;
 				INFOPLIST_FILE = CameraDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comt.example.CameraDemo;
@@ -412,6 +431,7 @@
 				BB08F5D71F8697BD00584111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB08F5D81F8697BD00584111 /* Build configuration list for PBXNativeTarget "CameraDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +440,7 @@
 				BB08F5DA1F8697BD00584111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
